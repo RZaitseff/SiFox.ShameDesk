@@ -22,9 +22,7 @@ public class HomeController {
 	public ModelAndView home(Model model) 
 	{
 		ModelAndView modelView = new ModelAndView();
-//		List<String> abbreviations = cService.nameList();
 		modelView.setViewName("home");
-//		modelView.addObject("currencies", abbreviations);
 		return modelView;
 	}
 	
