@@ -1,2 +1,2 @@
-xcopy C:\Projects\xbudget\classes\*.* C:\Tomcat\webapps\xbudget\WEB-INF\classes /L /E
-call C:\Tomcat\bin\startup.bat
+xcopy classes\*.* %CATALINA_HOME%\ShameDesk\WEB-INF\classes /L /E
+call %CATALINA_HOME%\bin\startup.bat
