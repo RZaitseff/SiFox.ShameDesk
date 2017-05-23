@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="RZaitseff">
+
+        <createTable tableName="person">
+            <column name="id" type="INT"></column>
+            <column name="adm" type="BOOLEAN"></column>
+            <column name="login" type="VARCHAR(255)"></column>
+            <column name="password" type="VARCHAR(255)"></column>
+            <column name="name" type="VARCHAR(255)"></column>
+            <column name="score" type="INT"></column>
+            <column name="comment" type="VARCHAR(255)"></column>
+            <column name="version" type="INT"></column>
+        </createTable>
+
+        <sql endDelimiter=";">
+        
+        	insert into person(id,login,name,adm,version) values(0,'admin','admin',true,0);
+        
+            insert into person(id,login,name,score,version) values(1,'кто-то','как-то',32,0);
+
+            insert into person(id,login,name,score,version) values(2,'login2','name2',55,0);
+
+            insert into person(id,login,name,score,version) values(3,'login3','name3',22,0);
+
+            insert into person(id,login,name,score,version) values(4,'login4','name4',44,0);
+
+            insert into person(id,login,name,score,version) values(5,'login5','name5',43,0);
+
+            insert into person(id,login,name,score,version) values(6,'login6','name6',66,0);
+
+            insert into person(id,login,name,score,version) values(7,'login7','name7',77,0);
+
+            insert into person(id,login,name,score,version) values(8,'login8','name8',12,0);
+
+            insert into person(id,login,name,score,version) values(9,'login9','name9',6,0);
+
+            insert into person(id,login,name,score,version) values(10,'login10','name10',44,0);
+
+            insert into person(id,login,name,score,version) values(11,'login11','name11',8,0);
+
+            insert into person(id,login,name,score,version) values(12,'login12','name12',8,0);
+
+            insert into person(id,login,name,score,version) values(13,'login13','name13',9,0);
+
+            insert into person(id,login,name,score,version) values(14,'login14','name14',20,0);
+
+            insert into person(id,login,name,score,version) values(15,'login15','name15',20,0);
+
+            insert into person(id,login,name,score,version) values(16,'login16','name16',9,0);
+
+            insert into person(id,login,name,score,version) values(17,'login17','name17',24,0);
+
+            insert into person(id,login,name,score,version) values(18,'login18','name18',20,0);
+
+            insert into person(id,login,name,score,version) values(19,'login19','name19',20,0);
+
+            insert into person(id,login,name,score,version) values(20,'login20','name20',20,0);
+
+            insert into person(id,login,name,score,version) values(21,'login21','name21',20,0);
+
+            insert into person(id,login,name,score,version) values(22,'login22','name22',20,0);
+
+            insert into person(id,login,name,score,version) values(23,'login23','name23',74,0);
+
+            insert into person(id,login,name,score,version) values(24,'login24','name24',8,0);
+
+            insert into person(id,login,name,score,version) values(25,'login25','name25',78,0);
+
+            insert into person(id,login,name,score,version) values(26,'login26','name26',45,0);
+
+            insert into person(id,login,name,score,version) values(27,'login27','name27',20,0);
+
+            insert into person(id,login,name,score,version) values(28,'login28','name28',20,0);
+
+            insert into person(id,login,name,score,version) values(29,'login29','name29',20,0);
+
+            insert into person(id,login,name,score,version) values(30,'login30','name30',20,0);
+
+            insert into person(id,login,name,score,version) values(31,'login31','name31',20,0);
+
+            insert into person(id,login,name,score,version) values(32,'login32','name32',20,0);
+
+            insert into person(id,login,name,score,version) values(33,'login33','name33',20,0);
+
+            insert into person(id,login,name,score,version) values(34,'login34','name34',20,0);
+
+            insert into person(id,login,name,score,version) values(35,'login35','name35',20,0);
+
+            insert into person(id,login,name,score,version) values(36,'login36','name36',20,0);
+
+            insert into person(id,login,name,score,version) values(37,'login37','name37',20,0);
+
+            insert into person(id,login,name,score,version) values(38,'login38','name38',20,0);
+
+            insert into person(id,login,name,score,version) values(39,'login39','name39',20,0);
+
+            insert into person(id,login,name,score,version) values(40,'login40','name40',20,0);
+
+            insert into person(id,login,name,score,version) values(41,'login41','name41',20,0);
+
+            insert into person(id,login,name,score,version) values(42,'login42','name42',20,0);
+
+            insert into person(id,login,name,score,version) values(43,'login43','name43',20,0);
+
+            insert into person(id,login,name,score,version) values(44,'login44','name44',20,0);
+
+            insert into person(id,login,name,score,version) values(45,'login45','name45',20,0);
+
+            insert into person(id,login,name,score,version) values(46,'login46','name46',20,0);
+
+            insert into person(id,login,name,score,version) values(47,'login47','name47',20,0);
+
+            insert into person(id,login,name,score,version) values(48,'login48','name48',20,0);
+
+            insert into person(id,login,name,score,version) values(49,'login49','name49',20,0);
+
+            insert into person(id,login,name,score,version) values(50,'login50','name50',20,0);
+
+            insert into person(id,login,name,score,version) values(51,'login51','name51',20,0);
+
+            insert into person(id,login,name,score,version) values(52,'login52','name52',20,0);
+
+            insert into person(id,login,name,score,version) values(53,'login53','name53',20,0);
+
+            insert into person(id,login,name,score,version) values(54,'login54','name54',20,0);
+
+            insert into person(id,login,name,score,version) values(55,'login55','name55',20,0);
+
+            insert into person(id,login,name,score,version) values(56,'login56','name56',20,0);
+
+            insert into person(id,login,name,score,version) values(57,'login57','name57',20,0);
+
+            insert into person(id,login,name,score,version) values(58,'login58','name58',20,0);
+
+            insert into person(id,login,name,score,version) values(59,'login59','name59',20,0);
+
+            insert into person(id,login,name,score,version) values(60,'login60','name60',20,0);
+
+            insert into person(id,login,name,score,version) values(61,'login61','name61',20,0);
+
+            insert into person(id,login,name,score,version) values(62,'login62','name62',20,0);
+
+            insert into person(id,login,name,score,version) values(63,'login63','name63',20,0);
+
+            insert into person(id,login,name,score,version) values(64,'login64','name64',20,0);
+
+            insert into person(id,login,name,score,version) values(65,'login65','name65',20,0);
+
+            insert into person(id,login,name,score,version) values(66,'login66','name66',20,0);
+
+            insert into person(id,login,name,score,version) values(67,'login67','name67',20,0);
+
+            insert into person(id,login,name,score,version) values(68,'login68','name68',20,0);
+
+            insert into person(id,login,name,score,version) values(69,'login69','name69',20,0);
+
+            insert into person(id,login,name,score,version) values(70,'login70','name70',20,0);
+
+            insert into person(id,login,name,score,version) values(71,'login71','name71',20,0);
+
+            insert into person(id,login,name,score,version) values(72,'login72','name72',20,0);
+
+            insert into person(id,login,name,score,version) values(73,'login73','name73',20,0);
+
+            insert into person(id,login,name,score,version) values(74,'login74','name74',20,0);
+
+            insert into person(id,login,name,score,version) values(75,'login75','name75',20,0);
+
+            insert into person(id,login,name,score,version) values(76,'login76','name76',20,0);
+
+            insert into person(id,login,name,score,version) values(77,'login77','name77',20,0);
+
+            insert into person(id,login,name,score,version) values(78,'login78','name78',20,0);
+
+            insert into person(id,login,name,score,version) values(79,'login79','name79',20,0);
+
+            insert into person(id,login,name,score,version) values(80,'login80','name80',20,0);
+
+            insert into person(id,login,name,score,version) values(81,'login81','name81',20,0);
+
+            insert into person(id,login,name,score,version) values(82,'login82','name82',20,0);
+
+            insert into person(id,login,name,score,version) values(83,'login83','name83',20,0);
+
+            insert into person(id,login,name,score,version) values(84,'login84','name84',20,0);
+
+            insert into person(id,login,name,score,version) values(85,'login85','name85',20,0);
+
+            insert into person(id,login,name,score,version) values(86,'login86','name86',20,0);
+
+            insert into person(id,login,name,score,version) values(87,'login87','name87',20,0);
+
+            insert into person(id,login,name,score,version) values(88,'login88','name88',20,0);
+
+            insert into person(id,login,name,score,version) values(89,'login89','name89',20,0);
+
+            insert into person(id,login,name,score,version) values(90,'login90','name90',20,0);
+
+            insert into person(id,login,name,score,version) values(91,'login91','name91',20,0);
+
+            insert into person(id,login,name,score,version) values(92,'login92','name92',20,0);
+
+            insert into person(id,login,name,score,version) values(93,'login93','name93',20,0);
+
+            insert into person(id,login,name,score,version) values(94,'login94','name94',20,0);
+
+            insert into person(id,login,name,score,version) values(95,'login95','name95',20,0);
+
+            insert into person(id,login,name,score,version) values(96,'login96','name96',20,0);
+
+            insert into person(id,login,name,score,version) values(97,'login97','name97',20,0);
+
+            insert into person(id,login,name,score,version) values(98,'login98','name98',20,0);
+
+            insert into person(id,login,name,score,version) values(99,'login99','name99',20,0);
+
+            insert into person(id,login,name,score,version) values(100,'login100','name100',20,0);
+        </sql>
+
+    </changeSet>
+
+</databaseChangeLog>
