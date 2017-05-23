@@ -18,7 +18,7 @@ import com.sifox.entity.User;
 /**
  * TODO: Javadoc for com.sifox.service
  *
- * @author Oleg Korolyov (o.korolyov@ameria.de)
+ * @author RZaitseff (RZaitseff@volny.cz)
  */
 @Service
 public class SecurityService 
